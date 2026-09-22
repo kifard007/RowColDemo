@@ -43,10 +43,15 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
-    Row {
-        TextCell("1", Modifier.weight(weight = 0.2f, fill = true))
-        TextCell("2", Modifier.weight(weight = 0.4f, fill = true))
-        TextCell("3", Modifier.weight(weight = 0.3f, fill = true))
+    Column() {
+        Row {
+            TextCell("1")
+            TextCell("2")
+
+        }
+        Row {
+            TextCell("3")
+        }
     }
 }
 
